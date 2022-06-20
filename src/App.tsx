@@ -1,11 +1,19 @@
 import React from 'react';
-import { SafeAreaView, Text } from 'react-native';
+
+import { ThemeProvider } from 'styled-components/native';
+import { NavigationContainer } from '@react-navigation/native';
+import 'react-native-reanimated';
+
+import Routes from './routes';
+import theme from './styles/theme';
 
 const App = () => {
   return (
-    <SafeAreaView>
-      <Text>Initial Commit</Text>
-    </SafeAreaView>
+    <ThemeProvider theme={theme}>
+      <NavigationContainer>
+        <Routes />
+      </NavigationContainer>
+    </ThemeProvider>
   );
 };
 
