@@ -28,7 +28,8 @@
     {
       "files": [
         "*.ts",
-        "*.tsx"
+        "*.tsx",
+        "*.js"
       ],
       "rules": {
         "@typescript-eslint/no-shadow": [
@@ -41,7 +42,7 @@
         "react/prop-types": "off",
         "react/react-in-jsx-scope": "off",
         "@typescript-eslint/explicit-modules-boundary-types": "off",
-        "@typescript-eslint/no-non-null-assertion": "off"
+        "@typescript-eslint/no-non-null-assertion": "off",
       }
     }
   ]
