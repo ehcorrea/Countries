@@ -1,0 +1,7 @@
+{
+  "src/**/*.{ts,tsx}": [
+    "yarn typecheck",
+    "yarn lint --fix",
+    "yarn test --findRelatedTests --bail"
+  ]
+}
