@@ -9,7 +9,7 @@ export default {
   dark: {
     elements: '#2b3945',
     background: '#202c37',
-    input: '#858585',
+    input: '#ffffff',
     text: '#ffffff',
     black: '#000000',
   },
