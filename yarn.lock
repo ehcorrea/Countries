@@ -691,7 +691,7 @@
     "@babel/helper-validator-option" "^7.16.7"
     "@babel/plugin-transform-flow-strip-types" "^7.17.12"
 
-"@babel/preset-typescript@^7.13.0", "@babel/preset-typescript@^7.16.7":
+"@babel/preset-typescript@^7.13.0", "@babel/preset-typescript@^7.15.0", "@babel/preset-typescript@^7.16.7":
   version "7.17.12"
   resolved "https://registry.yarnpkg.com/@babel/preset-typescript/-/preset-typescript-7.17.12.tgz#40269e0a0084d56fc5731b6c40febe1c9a4a3e8c"
   integrity sha512-S1ViF8W2QwAKUGJXxP9NAfNaqGDdEBJKpYkxHf5Yy2C4NPPzXGeR3Lhk7G8xJaaLcFTRfNjVbtbVtm8Gb0mqvg==
@@ -700,7 +700,7 @@
     "@babel/helper-validator-option" "^7.16.7"
     "@babel/plugin-transform-typescript" "^7.17.12"
 
-"@babel/register@^7.13.16":
+"@babel/register@^7.0.0", "@babel/register@^7.13.16":
   version "7.17.7"
   resolved "https://registry.yarnpkg.com/@babel/register/-/register-7.17.7.tgz#5eef3e0f4afc07e25e847720e7b987ae33f08d0b"
   integrity sha512-fg56SwvXRifootQEDQAu1mKdjh5uthPzdO0N6t358FktfL4XjAVXuH58ULoiW8mesxiOgNIrxiImqEwv0+hRRA==
@@ -2378,6 +2378,11 @@ babel-plugin-polyfill-regenerator@^0.3.0:
   integrity sha512-Y2B06tvgHYt1x0yz17jGkGeeMr5FeKUu+ASJ+N6nB5lQ8Dapfg42i0OVrf8PNGJ3zKL4A23snMi1IRwrqqND7A==
   dependencies:
     "@babel/helper-define-polyfill-provider" "^0.3.1"
+
+babel-plugin-replace-ts-export-assignment@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/babel-plugin-replace-ts-export-assignment/-/babel-plugin-replace-ts-export-assignment-0.0.2.tgz#927a30ba303fcf271108980a8d4f80a693e1d53f"
+  integrity sha512-BiTEG2Ro+O1spuheL5nB289y37FFmz0ISE6GjpNCG2JuA/WNcuEHSYw01+vN8quGf208sID3FnZFDwVyqX18YQ==
 
 "babel-plugin-styled-components@>= 1.12.0", babel-plugin-styled-components@^2.0.7:
   version "2.0.7"
@@ -5919,6 +5924,22 @@ merge@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/merge/-/merge-2.1.1.tgz#59ef4bf7e0b3e879186436e8481c06a6c162ca98"
   integrity sha512-jz+Cfrg9GWOZbQAnDQ4hlVnQky+341Yk5ru8bZSe6sIDTCIg8n9i/u7hSQGSVOF3C7lH6mGtqjkiT9G4wFLL0w==
+
+metro-babel-register@^0.71.1:
+  version "0.71.1"
+  resolved "https://registry.yarnpkg.com/metro-babel-register/-/metro-babel-register-0.71.1.tgz#c31a9a495e31a870fdb4f596bf298fb0c8b09cd7"
+  integrity sha512-3649xpMBeZW1WinF1bIwPSw0P/3GRBD0UZGVIf0Lf+3zHMWlhpk7wfdWi3f21KW+TQmjfUuTSTQ7gIj20cUYqg==
+  dependencies:
+    "@babel/core" "^7.14.0"
+    "@babel/plugin-proposal-nullish-coalescing-operator" "^7.0.0"
+    "@babel/plugin-proposal-optional-chaining" "^7.0.0"
+    "@babel/plugin-syntax-class-properties" "^7.0.0"
+    "@babel/plugin-transform-flow-strip-types" "^7.0.0"
+    "@babel/plugin-transform-modules-commonjs" "^7.0.0"
+    "@babel/preset-typescript" "^7.15.0"
+    "@babel/register" "^7.0.0"
+    babel-plugin-replace-ts-export-assignment "^0.0.2"
+    escape-string-regexp "^1.0.5"
 
 metro-babel-transformer@0.67.0:
   version "0.67.0"
