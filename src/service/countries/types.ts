@@ -22,4 +22,5 @@ export type Country = {
   topLevelDomain: string[];
   population: number;
   continent: string;
+  subregion: string;
 };
