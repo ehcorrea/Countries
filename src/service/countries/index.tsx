@@ -8,9 +8,10 @@ export const countriesApi = createApi({
     baseUrl: 'https://restcountries.com/v2/',
   }),
   endpoints: (builder) => ({
-    getCountries: builder.query<Country[], null>({
-      query: () => {
-        return `/all`;
+    getCountries: builder.query<Country[], string>({
+      query: (filter) => {
+        const startWith = filter || 'a';
+        return `/name/${startWith}`;
       },
     }),
     getCountryByCode: builder.query<Country, string>({
