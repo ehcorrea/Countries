@@ -18,6 +18,7 @@ export default {
     sizes: {
       small: '14px',
       medium: '16px',
+      large: '20px',
     },
   },
   colors: {
