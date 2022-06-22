@@ -36,6 +36,7 @@ export const OptionsWraper = styled(Animated.View)`
     position: absolute;
     right: 0;
     top: 55px;
+    z-index: 1;
   `}
 `;
 

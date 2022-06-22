@@ -6,6 +6,7 @@ export const Wrapper = styled.TouchableOpacity`
     border-radius: ${theme.border.radius.xsmall};
     elevation: 2;
     max-width: 320px;
+    margin-bottom: ${theme.spacings.large};
   `}
 `;
 
