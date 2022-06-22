@@ -14,10 +14,12 @@ export type Country = {
   borders: string[];
   capital: string;
   currencies: Currencies[];
-  flags: string[];
+  flags: { png: string };
   languages: Languages[];
   name: string;
   nativeName: string;
   region: string;
   topLevelDomain: string[];
+  population: number;
+  continent: string;
 };
