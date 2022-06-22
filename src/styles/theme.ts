@@ -20,6 +20,9 @@ export default {
       medium: '16px',
       large: '20px',
     },
+    family: {
+      nunitoSans: 'NunitoSans-Regular',
+    },
   },
   colors: {
     ...colors['default'],
